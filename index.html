@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/skins/color1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!--===== Style Switcher ==== -->
+    <link rel="stylesheet" href="css/skins/color1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
     <!-- ====  main container start ===== -->
@@ -23,22 +31,22 @@
             </span>
            </div>
            <ul class="nav">
-            <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-            <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-            <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
            </ul>
         </div>
         <!--  ==== aside end ==== -->
         <!-- ==== main content start ==== -->
         <div class="main-content">
         <!-- === home section start === -->
-         <section class="home section hidden">
+         <section class="home section" id="home">
             <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
-                        <h3 class="hello">Hello, my name is <span class="name">Will Ray</span></h3>
+                        <h3 class="hello">Hello, my name is <span class="name">William Ray</span></h3>
                         <h3 class="my-proffesion">I'm a <span class="typing">web developer</span></h3>
                         <p>I'm a web developer with an expertise in client relationships. I'm experienced with JavaScript</p>
                         <a href="#contact" class="btn hire-me">Hire Me</a>
@@ -51,7 +59,7 @@
          </section>
         <!-- ==== home section end ==== -->
         <!-- ==== about section start ==== -->
-        <section class="about section hidden">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -75,10 +83,10 @@
                                     <p>Age : <span>35 </span></p>
                                 </div>
                                 <div class="info-item padd-15">
-                                    <p>Website : <span>www.findingpeoplesolutions.com</span></p>
+                                    <p>Website : <span>findingpeoplesolutions.com</span></p>
                                 </div>
                                 <div class="info-item padd-15">
-                                    <p>Email : <span></span></p>
+                                    <p>Email : <span>thetechdad87@gmail.com</span></p>
                                 </div>
                                 <div class="info-item padd-15">
                                     <p>Certificates : <span>Responsive web design, Google IT support</span></p>
@@ -120,7 +128,7 @@
                                     <p>Version Control</p>
                                 </div>
                                 <div class="info-item padd-15">
-                                    <p></p>
+                                    <p>node.js</p>
                                 </div>
                                 <div class="info-item padd-15">
                                     <p></p>
@@ -141,7 +149,7 @@
                                                     <i class="fa fa-calendar"></i> 2022
                                                 </h3>
                                                 <h4 class="timeline-title">Cert in responsive web design</h4>
-                                                <p class="timeline-text"></p>
+                                                <p class="timeline-text">Free Code Camp</p>
                                             </div>
                                         
                                          <!-- === timeline item === -->
@@ -151,7 +159,7 @@
                                                     <i class="fa fa-calendar"></i> 2022
                                                 </h3>
                                                 <h4 class="timeline-title">Cert in IT Support</h4>
-                                                <p class="timeline-text"></p>
+                                                <p class="timeline-text">Google IT Support through corsera</p>
                                             
                                         </div>
                                          <!-- === timeline item === -->
@@ -160,8 +168,8 @@
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i> 2022-Currently enrolled
                                                 </h3>
-                                                <h4 class="timeline-title">Fullstack Web developer cert</h4>
-                                                <p class="timeline-text"></p>
+                                                <h4 class="timeline-title">Fullstack Web developer Bootcamp</h4>
+                                                <p class="timeline-text">The App Brewery</p>
                                             
                                         </div>
                                     </div>
@@ -223,7 +231,7 @@
         </section>
         <!-- ==== about section end ==== -->
         <!-- === services section start === -->
-        <section class="service section hidden">
+        <section class="service section" id="services">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -237,7 +245,7 @@
                             <div class="icon">
                                 <i class="fa fa-mobile-alt"></i>
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores recusandae! Ipsum corrupti aliquam pariatur?</p>
                         </div>
                     </div>
@@ -248,7 +256,7 @@
                             <div class="icon">
                                 <i class="fa fa-laptop-code"></i>
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores recusandae! Ipsum corrupti aliquam pariatur?</p>
                         </div>
                     </div>
@@ -259,7 +267,7 @@
                             <div class="icon">
                                 <i class="fa fa-palette"></i>
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores recusandae! Ipsum corrupti aliquam pariatur?</p>
                         </div>
                     </div>
@@ -270,7 +278,7 @@
                             <div class="icon">
                                 <i class="fa fa-code"></i>
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores recusandae! Ipsum corrupti aliquam pariatur?</p>
                         </div>
                     </div>
@@ -281,7 +289,7 @@
                             <div class="icon">
                                 <i class="fa fa-search"></i>
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores recusandae! Ipsum corrupti aliquam pariatur?</p>
                         </div>
                     </div>
@@ -292,7 +300,7 @@
                             <div class="icon">
                                 <i class="fa fa-bullhorn"></i>
                             </div>
-                            <h4>Web Design</h4>
+                            <h4>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dolores recusandae! Ipsum corrupti aliquam pariatur?</p>
                         </div>
                     </div>
@@ -303,7 +311,7 @@
         </section>
         <!-- === services section end === -->
         <!-- === Portfolio section start === -->
-         <section class="portfolio section hidden">
+         <section class="portfolio section" id="portfolio">
             <div class="container">
                  <div class="row">
                     <div class="section-title padd-15">
@@ -376,15 +384,15 @@
          </section>
         <!-- === Portfolio section end === -->
         <!-- === Contact section start === -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
                         <h2>Contact Me</h2>
                     </div>
                 </div>
-                <h3 class="contact-title">Have Any Questions?</h3>
-                <h4 class="contact-sub-title">I'M AT YOUR SERVICE</h4>
+                <h3 class="contact-title padd-15">Have Any Questions?</h3>
+                
                 <div class="row">
                     <!-- === Contact info item start === -->
                     <div class="contact-info-item padd-15">
@@ -404,7 +412,7 @@
                     <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-globe-americas"></i></div>
                         <h4>website</h4>
-                        <p>www.findingpeoplesolutions.com</p>
+                        <p>findingpeoplesolutions.com</p>
                     </div>
                     <!-- === Contact info item end === -->
                     <!-- === Contact info item start === -->
@@ -415,15 +423,73 @@
                     </div>
                     <!-- === Contact info item end === -->
                 </div>
+                <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                <!-- === cONTACT FORM === -->
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- === Contact section end === -->
         </div>
-        <!-- === main container end === -->
+        <!-- === main content end === -->
 
         
     </div>
     <!-- === main container end === -->
+    <!-- === Style Switch Start === -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- === Style Switch end === -->
+    <!-- === JS files === -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
