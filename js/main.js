@@ -7,7 +7,7 @@ var typed = new Typed(".typing", {
     "Father",
     "Motivator",
   ],
-  typeSpeed: 100,
-  backSpeed: 60,
+  typeSpeed: 25,
+  backSpeed: 25,
   loop: true,
 });
