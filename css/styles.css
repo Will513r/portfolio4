@@ -47,7 +47,7 @@ ul {
   display: none !important;
 }
 .main-content {
-  padding-left: 270px;
+  padding-left: 200px;
 }
 .padd-15 {
   padding-left: 15px;
@@ -98,8 +98,8 @@ ul {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  /* margin-left: -15px;
+  margin-right: -15px; */
   position: relative;
 }
 
@@ -125,9 +125,9 @@ ul {
 .shadow-dark {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-/* aside */
-.aside {
-  width: 270px;
+/* menu */
+.menu {
+  width: 200px;
   background: var(--bg-black-100);
   position: fixed;
   left: 0;
@@ -140,13 +140,13 @@ ul {
   align-items: center;
   z-index: 10;
 }
-.aside .logo {
+.menu .logo {
   position: absolute;
   top: 50px;
   font-size: 30px;
   text-transform: capitalize;
 }
-.aside .logo a {
+.menu .logo a {
   color: var(--text-black-900);
   font-weight: 700;
   padding: 15px 20px;
@@ -155,11 +155,11 @@ ul {
   position: relative;
 }
 
-.aside .logo a span {
+.menu .logo a span {
   font-family: "Clicker Script", cursive;
   font-size: 40px;
 }
-.aside .logo a::before {
+.menu .logo a::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -170,7 +170,7 @@ ul {
   left: 0;
 }
 
-.aside .logo a::after {
+.menu .logo a::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -180,7 +180,7 @@ ul {
   top: 0;
   right: 0;
 }
-.aside .nav-toggler {
+.menu .nav-toggler {
   height: 40px;
   width: 45px;
   border: 1px solid var(--bg-black-50);
@@ -194,14 +194,14 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.aside .nav-toggler span {
+.menu .nav-toggler span {
   height: 2px;
   width: 18px;
   background: var(--skin-color);
   display: inline-block;
   position: relative;
 }
-.aside .nav-toggler span::before {
+.menu .nav-toggler span::before {
   content: "";
   height: 2px;
   width: 18px;
@@ -211,7 +211,7 @@ ul {
   left: 0;
 }
 
-.aside .nav-toggler span::after {
+.menu .nav-toggler span::after {
   content: "";
   height: 2px;
   width: 18px;
@@ -220,16 +220,16 @@ ul {
   top: 6px;
   left: 0;
 }
-.aside .nav {
+.menu .nav {
   margin-top: 50px;
 }
 
-.aside .nav li {
+.menu .nav li {
   margin-bottom: 20px;
   display: block;
 }
 
-.aside .nav li a {
+.menu .nav li a {
   font-size: 16px;
   font-weight: 600;
   display: block;
@@ -238,11 +238,11 @@ ul {
   padding: 5px 15px;
 }
 
-.aside .nav li a.active {
+.menu .nav li a.active {
   color: var(--skin-color);
 }
 
-.aside .nav li a i {
+.menu .nav li a i {
   margin-right: 15px;
 }
 
@@ -298,14 +298,13 @@ h3.my-profession {
   position: absolute;
   height: 80px;
   width: 80px;
-
   left: 20px;
   top: -40px;
 }
 .home .home-img img {
-  margin: auto;
+  /* margin: auto; */
   border-radius: 5px;
-  height: 400px;
+  height: 300px;
 }
 /* About me  */
 .about .about-content {
@@ -331,9 +330,10 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 .about .about-content .personal-info {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 50%;
+  max-width: 40%;
   margin-top: 40px;
+  
 }
 .about .about-content .personal-info .info-item {
   flex: 0 0 50%;
@@ -341,7 +341,7 @@ h3.my-profession {
 }
 .about .about-content .personal-info .info-item p {
   font-weight: 600;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 16px;
   color: var(--text-black-900);
   border-bottom: 1px solid var(--skin-color);
@@ -357,12 +357,12 @@ h3.my-profession {
 }
 .about .about-content .personal-info .buttons .btn {
   margin-right: 15px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .about .about-content .skills {
   flex: 0 0 40%;
-  max-width: 40%;
-  margin-top: 40px;
+  max-width: 50%;
+  margin-top: 30px;
 }
 .about .about-content .education,
 .about .about-content .experience {
@@ -600,7 +600,7 @@ h3.my-profession {
   padding: 0 50px;
 }
 @media (max-width: 1199px) {
-  .aside {
+  .menu {
     left: -270px;
   }
   .main-content {
