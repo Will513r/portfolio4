@@ -24,7 +24,7 @@ function setActiveStyle(color) {
 
 //  ======== Theme light and dark ===========
 const dayNight = document.querySelector(".day-night");
-const currentTheme = localStorage.getItem("currentTheme");
+// const currentTheme = localStorage.getItem("currentTheme");
 // if (currentTheme) {
 //   document.body.classList.add("dark");
 //   if (currentTheme === "dark") {
