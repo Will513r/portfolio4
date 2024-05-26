@@ -33,15 +33,37 @@ const dayNight = document.querySelector(".day-night");
 //     dayNight.querySelector("i").classList.add("fa-moon");
 //   }
 // };
+// dayNight.addEventListener("click", () => {
+//   dayNight.querySelector("i").classList.toggle("fa-moon");
+//   dayNight.querySelector("i").classList.toggle("fa-sun");
+//   document.body.classList.toggle("light");
+// });
+// window.addEventListener("load", () => {
+//   if (document.body.classList.contains("light")) {
+//     dayNight.querySelector("i").classList.add("fa-sun");
+//   } else {
+//     dayNight.querySelector("i").classList.add("fa-moon");
+//   }
+// });
+
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  document.body.classList.add("dark");
+  dayNight.querySelector("i").classList.add("fa-sun");
+} else {
+  dayNight.querySelector("i").classList.add("fa-moon");
+}
+
 dayNight.addEventListener("click", () => {
-  dayNight.querySelector("i").classList.toggle("fa-moon");
-  dayNight.querySelector("i").classList.toggle("fa-sun");
-  document.body.classList.toggle("light");
-});
-window.addEventListener("load", () => {
-  if (document.body.classList.contains("light")) {
-    dayNight.querySelector("i").classList.add("fa-sun");
-  } else {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.remove("dark");
+    dayNight.querySelector("i").classList.remove("fa-sun");
     dayNight.querySelector("i").classList.add("fa-moon");
+  } else {
+    document.body.classList.add("dark");
+    dayNight.querySelector("i").classList.remove("fa-moon");
+    dayNight.querySelector("i").classList.add("fa-sun");
   }
 });
